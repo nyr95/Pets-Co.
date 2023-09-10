@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edit this template
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+
+
+  <title>FEEDBACK</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <style>
+      #title {
+  background-color: black;
+  color: #ff3333;
+
+}
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h3 {
+  padding-top: 5%;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: bolder;
+  font-size: 1.85rem;
+}
+
+p {
+  color: grey;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("https://th.bing.com/th/id/R.3e42598b69d276a6720a9dbc428a8107?rik=FqNd%2fIk9Bz3JLg&riu=http%3a%2f%2f2.bp.blogspot.com%2f_dedcXqzPdxo%2fTSXg518rNiI%2fAAAAAAAAB1w%2fCvIeEX7RPvg%2fs1600%2fcute-puppies-pic3.jpg&ehk=BvkDLJ3ouuxzLy3LI%2fInMyuiuVn7w3zWowKCaMl3%2fGs%3d&risl=&pid=ImgRaw&r=0"); 
+}
+
+/* Navigation bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light", sans-serif;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+.logo{
+    width:50px;
+    height:50px;
+    background-color: transparent;
+    positon:relative;
+        
+}
+
+
+/* Features section */
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+
+
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+
+}
+
+.icon {
+  color: #ef8172;
+  padding-bottom: 5%;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials */
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+.dog-img {
+  width: 25%;
+  border-radius: 100%;
+  /* making img round */
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 25%;
+}
+
+/* Pricing section */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.dog-pic {
+  position: relative;
+}
+
+@media (max-width:1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.cta-heading {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Footer section */
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+.comment{
+    margin: 100px auto;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px;
+    text-align: center;
+    padding:200px 0;
+}
+  </style>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/a7e4e983e2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+           <section id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+          <a class="navbar-brand" href=""><img class ="logo" src="https://static.wixstatic.com/media/84b06e_717d310324e54451a0195d5658c70004~mv2.png/v1/fill/w_640,h_366,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84b06e_717d310324e54451a0195d5658c70004~mv2.png" alt="logo">PETS & CO.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+          aria-controls="collapseWidthExample" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseWidthExample">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">
+                Pricing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.php">
+                Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                About us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">
+                feedback
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      
+
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+        <section class="comment">
+	<h2> LEAVE A COMMENT</h2>
+	<form class="cform">
+		<input type="text" placeholder="Enter Name">
+		<input type="email" placeholder="Enter E-mail">
+                <input type="TEXT" placeholder="Enter REVIEW">
+                <br>
+		<button type="submit" class="hero-btn red-btn">POST FEEDBACK</button>
+	</form>
+        
+</body>
+
+
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edit this template
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+
+
+  <title></title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <style>
+      #title {
+  background-color: black;
+  color: #ff3333;
+
+}
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h3 {
+  padding-top: 5%;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: bolder;
+  font-size: 1.85rem;
+}
+
+p {
+  color: grey;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("https://th.bing.com/th/id/R.3e42598b69d276a6720a9dbc428a8107?rik=FqNd%2fIk9Bz3JLg&riu=http%3a%2f%2f2.bp.blogspot.com%2f_dedcXqzPdxo%2fTSXg518rNiI%2fAAAAAAAAB1w%2fCvIeEX7RPvg%2fs1600%2fcute-puppies-pic3.jpg&ehk=BvkDLJ3ouuxzLy3LI%2fInMyuiuVn7w3zWowKCaMl3%2fGs%3d&risl=&pid=ImgRaw&r=0"); 
+}
+
+/* Navigation bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light", sans-serif;
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+.logo{
+    width:50px;
+    height:50px;
+    background-color: transparent;
+    positon:relative;
+        
+}
+
+
+/* Features section */
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+
+
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+
+}
+
+.icon {
+  color: #ef8172;
+  padding-bottom: 5%;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials */
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+.dog-img {
+  height:100px;
+  width: 50%;
+  border-radius: 10%;
+  float:right;
+  margin: 0px 10px;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 25%;
+}
+
+/* Pricing section */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.dog-pic {
+  position: relative;
+}
+
+@media (max-width:1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.cta-heading {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.dog{
+    position:relative;
+}
+
+/* Footer section */
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+  </style>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/a7e4e983e2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+           <section id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+          <a class="navbar-brand" href=""><img class ="logo" src="https://static.wixstatic.com/media/84b06e_717d310324e54451a0195d5658c70004~mv2.png/v1/fill/w_640,h_366,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84b06e_717d310324e54451a0195d5658c70004~mv2.png" alt="logo">PETS & CO.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+          aria-controls="collapseWidthExample" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseWidthExample">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">
+                Pricing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.php">
+                Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                About us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">
+                feedback
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class=" row">
+
+        <div class="col-lg-6">
+          <h1>Pet Boarding Services Redefined </h1>
+
+          <button type="button" class="btn btn-dark btn-lg download-button"><button onclick="window.location.href = 'about.html';">
+            About Us:</button>
+
+          
+        </div>
+        
+      </div>
+      
+          <img class ="dog-img" src="https://s1.1zoom.me/big0/153/Dogs_Black_background_Spaniel_539102_1280x794.jpg" alt="dogimg">
+      
+    </div>
+               <
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="icon fa-solid fa-circle-check fa-4x"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fa-solid fa-bullseye fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="icon fa-solid fa-heart fa-4x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the CARE of your dog's life or your money back.</p>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2> Owners and their pets can have a wonderful time....</h2>
+          
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with Pets & Co. help, they've found the love of
+            their life. I think.</h2>
+          
+          <em>Beverly, Illinois</em>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="data:image/png;base64,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" alt="tc-logo">
+    <img class="press-logo" src="data:image/png;base64,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" alt="tnw-logo">
+    <img class="press-logo" src="data:image/png;base64,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" alt="biz-insider-logo">
+    <img class="press-logo" src="https://helios-i.mashable.com/imagery/defaults/fallback-thumbnail.fill.size_1200x675.1.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+
+        <div class="card">
+          <div class="card-header">
+            <h3>Welcome package</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>DAY CARE</p>
+            <p>HEALTH CHECKUP</p>
+            <p>valid for only 2 visits</p>
+            <div class="d-grid gap-2">
+              <button type="button" class=" btn btn-lg  btn-outline-dark"><button onclick="window.location.href = 'signup.php';">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Premium package</h3>
+          </div>
+          <div class="card-body">
+            <h2>₹2350 / visit</h2>
+            <p>GROOMING</p>
+            <p>HEALTH CHECKUP</p>
+            <p>DAY/NIGHT CARE</p>
+            <div class="d-grid gap-2">
+              <button type="button" class=" btn btn-lg  btn-dark"><button onclick="window.location.href = 'signup.php';">Sign Up</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>Royal package</h3>
+          </div>
+          <div class="card-body">
+            <h2>₹4500 /visit </h2>
+            <p>GROOMING</p>
+            <p>HEALTH CHECKUP</p>
+            <p>GROUP ACTIVITIES</p>
+            <p>DAY/NIGHT CARE</p>
+            <div class="d-grid gap-2">
+              <button type="button" class=" btn btn-lg  btn-dark"><button onclick="window.location.href = 'signup.php';">Sign Up</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-heading">Find the True care to your dog today</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button">Signup</button>
+    <button type="button" class="btn btn-light btn-lg download-button">login</button>
+
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+      <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15348.255025271514!2d77.50465015742265!3d13.019296183448818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1681363468054!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+    <button type="button" class="btn btn-link"><i class="fa-brands fa-twitter"></i></button>
+
+    <button type="button" class="btn btn-link"><i class="fa-brands fa-facebook"></i></button>
+
+    <button type="button" class="btn btn-link"><i class="fa-brands fa-instagram"></i></button>
+
+    <button type="button" class="btn btn-link"><i class="fa-solid fa-envelope"></i></button>
+
+    <p>© Copyright 2023 Pets&Co.</p>
+
+
+  </footer>
+    </body>
+</html>
+
